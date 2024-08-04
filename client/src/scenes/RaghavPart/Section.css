@@ -1,0 +1,46 @@
+/* src/components/Section.css */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.5s;
+}
+
+.image-container,
+.content-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.image-first .image-container {
+  order: 1;
+}
+
+.image-first .content-container {
+  order: 2;
+}
+
+.content-first .image-container {
+  order: 2;
+}
+
+.content-first .content-container {
+  order: 1;
+}
+
+.section:hover {
+  transform: translateY(-10px);
+}
+
+.content-container h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333; /* Change the color to match your design */
+}
